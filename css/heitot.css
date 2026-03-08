@@ -1,0 +1,92 @@
+/* ============================================
+   Heitot styles
+   ============================================ */
+
+body {
+  color: var(--color-text-secondary);
+  font-family: var(--font-family-base);
+  line-height: var(--line-height-base);
+}
+.section-container img {
+  width: 100%;
+  height: auto;
+  grid-column: 1 / -1;
+  border-radius: 8px;
+}
+
+/* ============================================
+   Lists Styling
+   ============================================ */
+ul,
+ol {
+  margin-bottom: 1.5rem;
+  margin-left: 0;
+  padding-left: 1.5rem;
+}
+
+li {
+  line-height: 1.8;
+  color: var(--color-text-secondary);
+}
+
+ul li:hover {
+  color: var(--color-brand-primary);
+  transition: color 0.2s ease;
+}
+
+ol li:hover {
+  color: var(--color-brand-primary);
+  transition: color 0.2s ease;
+}
+
+figure {
+  margin: 1.5rem 0;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+figcaption {
+  font-size: var(--font-size-s);
+  color: var(--color-text-secondary);
+  text-align: center;
+  margin-top: 0.75rem;
+}
+
+.video-wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  position: relative;
+  width: 100%;
+  max-width: 560px;
+  margin: 1rem 0;
+}
+
+.video-wrapper iframe {
+  width: 100%;
+  height: auto;
+  aspect-ratio: 16 / 9;
+}
+
+/* Responsive: Stack on mobile */
+@media (max-width: 768px) {
+  main {
+    grid-template-columns: 1fr;
+    grid-template-rows: auto auto auto;
+  }
+
+  .sidebar {
+    display: none;
+  }
+
+  .main-content {
+    grid-column: 1;
+    grid-row: 3;
+  }
+  .hero {
+    padding: 1rem;
+    min-height: 30vh;
+  }
+}

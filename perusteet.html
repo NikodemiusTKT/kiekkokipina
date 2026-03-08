@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Kiekkokipinä - Perusteet</title>
+  <link rel="stylesheet" href="css/base.css">
+  <link rel="stylesheet" href="css/layout.css">
+  <link rel="stylesheet" href="css/components.css">
+  <link rel="stylesheet" href="css/perusteet.css">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Merriweather:ital,opsz,wght@0,18..144,300..900;1,18..144,300..900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+    rel="stylesheet">
+  <script src="https://kit.fontawesome.com/97e8f25ed5.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+
+  <div class="layout">
+
+    <header>
+      <nav class="navbar">
+        <img class="logo" src="images/kiekkokipina-logo-bw.webp" alt="Kiekkokipinä logo">
+        <div class="hamburger" id="hamburger">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+        <ul class="nav-links" id="nav-links">
+          <li><a href="index.html">Etusivu</a></li>
+          <li><a href="perusteet.html">Perusteet</a></li>
+          <li><a href="kiekot.html">Kiekot</a></li>
+          <li><a href="heitot.html">Heitot</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <section class="hero">
+        <div class="hero-bg">
+          <img src="images/page2-hero-teepad.webp" alt="Frisbeegolf hero background">
+        </div>
+        <div class="hero-content">
+          <h1>Frisbeegolf perusteet </h1>
+        </div>
+      </section>
+      <div class="mobile-toc">
+        <button class="toc-toggle" id="toc-toggle">
+          <span>Sisältö</span>
+          <i class="fas fa-chevron-down"></i>
+        </button>
+        <nav class="toc-menu" id="toc-menu">
+          <ul>
+            <li><a href="#ingress">Johdanto</a></li>
+            <li><a href="#what-is">Mikä on frisbeegolf?</a></li>
+            <li><a href="#how-field-works">Miten rata toimii</a></li>
+            <li><a href="#disc-rules">Säännöt ja pisteytys</a></li>
+            <li><a href="#disc-equipment">Varusteet</a></li>
+            <li><a href="#disc-etiquette">Turvallisuus ja etiketti</a></li>
+            <li><a href="#summary">Yhteenveto</a></li>
+          </ul>
+        </nav>
+      </div>
+      <aside class="sidebar">
+        <nav class="sidebar-nav">
+          <h3>Sisältö</h3>
+          <ul>
+            <li><a href="#ingress">Johdanto</a></li>
+            <li><a href="#what-is">Mikä on frisbeegolf?</a></li>
+            <li><a href="#how-field-works">Miten rata toimii</a></li>
+            <li><a href="#disc-rules">Säännöt ja pisteytys</a></li>
+            <li><a href="#disc-equipment">Varusteet</a></li>
+            <li><a href="#disc-etiquette">Turvallisuus ja etiketti</a></li>
+            <li><a href="#summary">Yhteenveto</a></li>
+          </ul>
+        </nav>
+      </aside>
+      <div class="main-content">
+        <article id="ingress" class="ingress">
+          <p>Tällä sivulla käydään läpi frisbeegolfin keskeiset periaatteet: lajin tarkoitus, radan rakenne, säännöt,
+            pisteytys, varusteet sekä turvallinen ja sujuva pelaaminen. Sisältö on tarkoitettu erityisesti
+            aloittelijoille, mutta se antaa myös teknisesti täsmällisen kokonaiskuvan lajista.</p>
+        </article>
+        <hr />
+        <article id="what-is" class="content-section">
+          <img src="images/page2-basket-putt.webp" alt="Frisbee basket putt">
+          <div class="section-content">
+            <h2>Mikä on frisbeegolf?</h2>
+            <p>
+              Frisbeegolf on tarkkuus- ja heittolaji, jossa pelaajan tavoitteena on saada frisbeegolfkiekko
+              lähtöpaikalta
+              maalikoriin mahdollisimman vähällä heittojen määrällä. Jokainen heitto lasketaan yhdeksi suoritukseksi, ja
+              kierroksen lopullinen tulos muodostuu kaikkien väylien yhteenlasketuista heitoista.
+            </p>
+
+            <p>
+              Laji perustuu samoihin periaatteisiin kuin perinteinen golf, mutta välineinä käytetään aerodynaamisesti
+              muotoiltuja muovikiekkoja ja kiinteitä metallikoreja.
+            </p>
+
+            <p>
+              Frisbeegolfia pelataan pääasiassa ulkona, ja radat hyödyntävät luonnollisia esteitä, kuten puita,
+              korkeuseroja ja maaston muotoja.
+            </p>
+            <aside class="callout-box">
+              <div class="callout-header">
+                <i class="fa-solid fa-lightbulb"></i>
+                <h3>Aloittelijan vinkki!</h3>
+              </div>
+              <div class="callout-content">
+                <p>Aloita yksinkertaisella heittotekniikalla avoimella kentällä ennen kuin siirryt radalle. Tämä
+                  rakentaa
+                  luottamusta ja auttaa ymmärtämään, miten eri kiekot käyttäytyvät.</p>
+              </div>
+            </aside>
+          </div>
+        </article>
+        <hr />
+        <article id="how-field-works" class="content-section">
+          <div class="section-content">
+            <img src="images/page2-teepad.webp" alt="Frisbeegolf Teepad">
+            <h2>Miten frisbeegolfrata toimii</h2>
+            <p>
+              Frisbeegolfrata koostuu yleensä 9 tai 18 erillisestä väylästä. Jokaisella väylällä on oma lähtöalue
+              (tiipaikka) ja maalikori. Väylän pituus, muoto ja esteet vaihtelevat, mikä vaikuttaa kiekon valintaan ja
+              heittotekniikkaan.
+            </p>
+            <h3>Väylän osat</h3>
+            <ul>
+              <li><b>Tiipaikka:</b> Merkitty alue, josta väylä aloitetaan.</li>
+              <li><b>Väylä:</b> Alue, jota pikin kiekko edetään.</li>
+              <li><b>Maalikori:</b> Kori, johon kiekko on saatava heitettyä.</li>
+              <li><b>Esteet:</b> Luonnolliset tai teolliset esteet, jotka vaikuttavat kiekon liikkeeseen</li>
+              <li><b>Mando:</b> Pakollinen heittolinja, joka määrää, miltä puolelta kiekon tulee ohittaa tietty este,
+                kuten puu
+                tai tolppa (esim. vasemmalta puolelta).</li>
+            </ul>
+          </div>
+        </article>
+        <hr />
+        <article id="disc-rules" class="content-section">
+          <div class="section-content">
+            <img src="images/page2-discgolf-scorecard.webp" alt="Discgolf scorecard">
+            <h2>Säännöt ja pisteytys</h2>
+            <p>
+              Frisbeegolfin säännöt ovat rakenteeltaan yksinkertaiset ja perustuvat yhdenmukaiseen pisteenlaskuun.
+            </p>
+
+            <h3>Perussäännöt</h3>
+            <ul>
+              <li>Jokainen heitto lasketaan yhdeksi pisteeksi</li>
+              <li>Väylä päättyy, kun kiekko jää koriin</li>
+              <li>Pelaaja heittää aina edellisen heiton päätepisteestä</li>
+              <li>Kierroksen voittaa pienimmän pistemäärän saanut pelaaja</li>
+            </ul>
+
+            <h4>OB-Alueet</h4>
+            <p>
+              OB-alueet (out-of-bounds) ovat radan ulkopuolelle rajattuja alueita. Jos kiekko päätyy OB-alueelle,
+              pelaajalle lisätään yksi rangaistusheitto ja peliä jatketaan säännöissä määritellyltä paikalta.
+            </p>
+
+            <aside class="callout-box">
+              <div class="callout-header">
+                <i class="fas fa-lightbulb"></i>
+                <h3>Aloittelijan vinkki!</h3>
+              </div>
+              <div class="callout-content">
+                <p>Harjoittelukierroksilla sääntöjä voi soveltaa joustavasti, kunhan turvallisuus ja muiden pelaajien
+                  huomioiminen säilyvät.
+
+                </p>
+              </div>
+            </aside>
+
+          </div>
+        </article>
+        <hr />
+
+        <article id="disc-equipment" class="content-section">
+          <img src="images/page2-discs.webp" alt="Discgolf discs">
+          <div class="section-content">
+            <h2>Varusteet</h2>
+            <p>
+              Frisbeegolf on varustemäärältään kevyt laji. Pelaaminen onnistuu vähäisillä hankinnoilla.
+            </p>
+            <h3>Välttämättömät varusteet</h3>
+            <ul>
+              <li>Frisbeegolfkiekko - Aloittelijalle sopii hyvin yksi keskimatkan midari.</li>
+            </ul>
+            <h3>Lisävarusteet</h3>
+            <ul>
+              <li>Useampi kiekko eri heittotilanteisiin</li>
+              <li>Tulosten merkitsemisvälineet</li>
+              <li>Minikiekko eli markkeri</li>
+              <li>Kiekkoreppu tai -laukku</li>
+              <li>Säänmukaiset vaatteet ja jalkineet</li>
+            </ul>
+            <aside class="callout-box">
+              <div class="callout-header">
+                <i class="fas fa-lightbulb"></i>
+                <h3>Aloittelijan vinkki!</h3>
+              </div>
+              <div class="callout-content">
+                <p>Aloittelijalle suositellaan aluksi yhtä tai kahta helposti hallittavaa kiekkoa, kuten midari ja
+                  putteri.
+                </p>
+              </div>
+            </aside>
+          </div>
+
+        </article>
+        <hr />
+
+        <article id="disc-etiquette" class="content-section">
+          <div class="section-content">
+            <img src="images/page2-discgolf-etiquette.webp" alt="Disc golf etiquette">
+            <h2>Turvallisuus ja etiketti</h2>
+            <p>
+              Turvallinen ja sujuva pelaaminen perustuu sekä sääntöjen noudattamiseen että hyviin tapoihin.
+            </p>
+
+            <h3>Turvallisuus</h3>
+            <ul>
+              <li>Varmista, ettei heittolinjalla ole ihmisiä</li>
+              <li>Odota edessä olevan ryhmän etenemistä</li>
+              <li>Varoita ääneen, jos heitto suuntautuu kohti muita</li>
+            </ul>
+
+            <h3>Etiketti</h3>
+            <ul>
+              <li><strong>Pelaa vuorotellen:</strong> Älä heitä kiekkoa, ennen kuin on sinun vuorosi.</li>
+              <li><strong>Anna nopeamman ryhmän pelata ohi:</strong> Älä hidasta toisten pelaajien etenemistä.</li>
+              <li><strong>Pidä rata ja luonto siistinä:</strong> Koko rata on yhteinen omaisuus, joten pidä se siistinä.
+              </li>
+            </ul>
+
+          </div>
+        </article>
+        <hr>
+
+        <article id="summary">
+          <div class="section-content">
+            <h2>Yhteenveto</h2>
+            <p>Frisbeegolf on jännittävä ja helposti aloitettava laji, joka yhdistää tarkkuuden, tekniikan ja ulkoilun.
+              Tässä sivulla käsitellyt perusteet antavat sinulle hyvän pohjan aloittamiseen:</p>
+            <ul>
+              <li><strong>Säännökset ovat yksinkertaiset:</strong> Heita kiekko tiipaikalta maalikoriin mahdollisimman
+                vähällä heitolla</li>
+              <li><strong>Välineet ovat edullisia:</strong> Aloita yhdellä tai kahdella kiekolla ja kehitä varusteitasi
+                ajan mittaan</li>
+              <li><strong>Turvallisuus on ensimmäinen:</strong> Aina varoita ja tarkista, ettei heittolinjalla ole
+                ihmisiä
+              </li>
+              <li><strong>Praktista teoriaa:</strong> Eri kiekot, heittotavat ja radat tarjoavat loputtomasti oppimisen
+                ja
+                kehittymisen mahdollisuuksia</li>
+            </ul>
+            <p>Nyt kun tunnet frisbeegolfin perusteet, olet valmis astumaan radalle ja nauttimaan tästä loistavasta
+              lajista!</p>
+          </div>
+        </article>
+
+        <section class="cta" id="cta">
+          <h2>Mitä seuraavaksi?</h2>
+          <button id="learn-discs-button">Opi kiekoista</button>
+        </section>
+      </div>
+    </main>
+
+    <footer class="footer">
+      © 2026 Kiekkokipinä. All rights reserved.
+    </footer>
+
+  </div>
+
+  <script src="/scripts/script.js"></script>
+</body>
+
+</html>

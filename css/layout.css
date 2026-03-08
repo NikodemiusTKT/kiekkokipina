@@ -1,0 +1,43 @@
+/* ============================================
+   LAYOUT STRUCTURE
+   ============================================ */
+
+.layout {
+  display: grid;
+  grid-template-rows: auto 1fr auto;
+  grid-template-columns: 1fr;
+  min-height: 100vh;
+  padding-top: 115px; /* Space for fixed navbar with logo */
+}
+
+main {
+  display: grid;
+  grid-template-columns: 250px 1fr;
+  grid-template-rows: auto auto;
+  gap: 2rem;
+  padding: 0 1rem;
+  grid-column: 1 / -1;
+  grid-row: 2 / 3;
+}
+
+main > * {
+  grid-column: auto; /* Don't force full width */
+}
+
+/* Hero spans full width */
+main > .hero {
+  grid-column: 1 / -1;
+  grid-row: 1;
+}
+
+.main-content {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  gap: 2rem;
+  grid-column: 2 / -1;
+  grid-row: 2;
+}
+
+.main-content > * {
+  grid-column: 1 / -1; /* Make all main-content children span full width by default */
+}

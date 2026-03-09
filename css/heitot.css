@@ -39,6 +39,8 @@ ol li:hover {
   transition: color 0.2s ease;
 }
 
+/* Styling for figures and videos */
+
 figure {
   margin: 1.5rem 0;
   display: flex;

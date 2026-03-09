@@ -336,6 +336,7 @@ header {
   font-size: var(--font-size-s);
 }
 
+/* Highlight active section in sidebar */
 .sidebar-nav a:hover {
   color: var(--color-brand-primary);
   border-left-color: var(--color-brand-primary);

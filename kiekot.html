@@ -9,6 +9,7 @@
   <meta name="description"
     content="Opi frisbeegolffin kiekot Kiekkokipinä-oppaasta. Eri kiekkojen tyypit, ominaisuudet ja käyttötarkoitukset selitettynä aloittelijoille.">
   <meta name="keywords" content="frisbeegolf, opas, perusteet, kiekot, heitot, ulkoilulaji, harrastus">
+  <meta http-equiv="Cache-Control" content="max-age=31536000, must-revalidate">
   <title>Kiekkokipinä - Kiekot</title>
   <link rel="stylesheet" href="css/base.css">
   <link rel="stylesheet" href="css/layout.css">
@@ -28,7 +29,7 @@
 
     <header>
       <nav class="navbar">
-        <img class="logo" src="images/kiekkokipina-logo-bw.webp" alt="kiekkokipina logo">
+        <img class="logo" src="images/kiekkokipina-brand-logo-250.webp" alt="kiekkokipina logo">
         <div class="hamburger" id="hamburger">
           <span></span>
           <span></span>
@@ -45,7 +46,9 @@
     <main>
       <section class="hero">
         <div class="hero-bg">
-          <img src="images/page3-hero-discbag.webp" alt="discgolf bag hero background">
+          <img src="images/page3/page3-hero-discbag.webp" srcset="images/page3/page3-hero-discbag-600.webp 600w,
+            images/page3/page3-hero-discbag.webp 1200w" alt="Frisbeegolf hero background"
+            sizes="(max-width: 600px) 100vw, 50vw">
         </div>
         <div class="hero-content">
           <h1>Kiekot</h1>
@@ -63,7 +66,8 @@
         <h2>Kiekkotyypit yhdellä silmäyksellä</h2>
         <div class="cards-container">
           <div class="card">
-            <img src="images/page3-putter.webp" alt="frisbeegolf putterikiekko kuva" class="card-img">
+            <img src="images/page3/page3-putter.webp" width="600" height="600" loading="lazy"
+              alt="frisbeegolf putterikiekko kuva" class="card-img">
             <div class="card-body">
               <h3 class="card-title">Putteri</h3>
               <p class="card-text">Lyhyet heitot ja putit</p>
@@ -81,7 +85,8 @@
             </div>
           </div>
           <div class="card">
-            <img src="images/page3-midrange.webp" alt="frisbeegolf midari kuva" class="card-img">
+            <img src="images/page3/page3-midrange.webp" width="600" height="600" loading="lazy"
+              alt="frisbeegolf midarikiekko kuva" class="card-img">
             <div class="card-body">
               <h3 class="card-title">Midari</h3>
               <p class="card-text">Keskipitkät, hallitut heitot.
@@ -100,7 +105,8 @@
             </div>
           </div>
           <div class="card">
-            <img src="images/page3-fairway-driver.webp" alt="väylädraiverikiekko kuva" class="card-img">
+            <img src="images/page3/page3-fairway-driver.webp" loading="lazy" width="600" height="600"
+              alt="väylädraiverikiekko kuva" class="card-img">
             <div class="card-body">
               <h3 class="card-title">Väylädraiveri</h3>
               <p class="card-text">Pidemmät avaukset</p>
@@ -118,7 +124,8 @@
             </div>
           </div>
           <div class="card">
-            <img src="images/page3-distance-driver.webp" alt="pituusdraiverikiekko kuva" class="card-img">
+            <img src="images/page3/page3-distance-driver.webp" width="600" height="600" loading="lazy"
+              alt="pituusdraiverikiekko kuva" class="card-img">
             <div class="card-body">
               <h3 class="card-title">Pituusdraiveri</h3>
               <p class="card-text">Maksimaalinen pituus.</p>
@@ -170,7 +177,8 @@
       <hr>
       <article id="discgolf-putter">
         <div class="disc-container">
-          <img src="images/page3-putter.webp" alt="frisbeegolf putterikiekko kuva">
+          <img src="images/page3/page3-putter.webp" width="600" height="600" loading="lazy"
+            alt="frisbeegolf putterikiekko kuva">
 
           <div class="disc-content">
             <h2>Putterit</h2>
@@ -211,8 +219,8 @@
       </article>
       <article id="discgolf-midrange">
         <div class="disc-container">
-          <img src="images/page3-midrange.webp" alt="frisbeegolf midari kuva">
-
+          <img src="images/page3/page3-midrange.webp" width="600" height="600" loading="lazy"
+            alt="frisbeegolf midari kuva">
           <div class="disc-content">
             <h2>Lähestymiskiekot (midarit)</h2>
             <p>Lähestymiskiekot tarjoavat hyvän tasapainon pituuden ja hallittavuuden välillä. Ne reagoivat herkästi
@@ -253,8 +261,8 @@
       <hr>
       <article id="discgolf-fairway">
         <div class="disc-container">
-          <img src="images/page3-fairway-driver.webp" alt="väylädraiverikiekko kuva">
-
+          <img src="images/page3/page3-fairway-driver.webp" width="600" height="600" loading="lazy"
+            alt="väylädraiverikiekko kuva">
           <div class="disc-content">
             <h2>Väylädraiverit (fairway)</h2>
             <p>Väylädraiverit on suunniteltu pidempiin heittoihin, mutta ne ovat edelleen hallittavissa kevyellä ja
@@ -296,8 +304,8 @@
 
       <article id="discgolf-distance-driver">
         <div class="disc-container">
-          <img src="images/page3-distance-driver.webp" alt="pituusdraiverikiekko kuva">
-
+          <img src="images/page3/page3-distance-driver.webp" width="600" height="600" loading="lazy"
+            alt="pituusdraiverikiekko kuva">
           <div class="disc-content">
             <h2>Draiverit (distance driver)</h2>
             <p>Pituusdraiverit ovat frisbeegolfkiekkojen nopein luokka. Ne on tarkoitettu maksimaaliseen

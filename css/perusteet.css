@@ -26,16 +26,16 @@ body {
   grid-row: 1;
 }
 
-.section-content {
+.text-content {
   grid-column: 1;
   grid-row: 2;
 }
 
-.section-content h2 {
+.text-content h2 {
   margin-bottom: 0;
 }
 
-.section-content p {
+.text-content p {
   margin: 1rem 0;
 }
 
@@ -80,7 +80,7 @@ body {
     padding: 1rem;
   }
 
-  #summary .section-content {
+  #summary .text-content {
     padding: 0 1rem;
   }
 

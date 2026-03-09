@@ -264,6 +264,7 @@ header {
   justify-content: center;
   border-bottom: 2px solid var(--color-text-on-dark);
   transition: background-color 0.3s ease;
+  font-size: var(--font-size-base);
 }
 
 .nav-links a:last-child {

@@ -173,7 +173,7 @@ li {
   grid-template-rows: auto 1fr auto;
   grid-template-columns: 1fr;
   min-height: 100vh;
-  padding-top: 115px; /* Space for fixed navbar with logo */
+  padding-top: 110px; /* Space for fixed navbar with logo */
 }
 
 main {
@@ -255,16 +255,15 @@ header {
 }
 
 .nav-links a {
+  font-size: 1rem;
   text-decoration: none;
   color: var(--color-text-on-dark);
-  font-size: 1rem;
   padding: 0.5rem 0.75rem;
   display: flex;
   align-items: center;
   justify-content: center;
   border-bottom: 2px solid var(--color-text-on-dark);
   transition: background-color 0.3s ease;
-  font-size: var(--font-size-base);
 }
 
 .nav-links a:last-child {

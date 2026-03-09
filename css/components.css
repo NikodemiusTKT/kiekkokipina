@@ -34,6 +34,8 @@
   font-weight: 400;
   position: absolute;
   left: 0;
+  top: 50%;
+  transform: translateY(-50%);
   color: var(--color-brand-primary);
   margin-right: 0.75rem;
 }

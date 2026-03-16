@@ -1,7 +1,7 @@
 /* Summary component */
 #summary {
   padding: 2rem 0;
-  background-color: rgba(114, 176, 29, 0.06);
+  background-color: rgba(114, 176, 29, 0.15);
   border-radius: 8px;
   margin: 3rem 0;
 }
@@ -70,7 +70,7 @@
 }
 
 .callout-content {
-  background-color: rgba(114, 176, 29, 0.08);
+  background-color: rgba(114, 176, 29, 0.15);
   padding: 1.5rem;
 }
 

@@ -21,7 +21,6 @@ ol {
 
 li {
   line-height: 1.8;
-  color: var(--color-text-secondary);
 }
 
 ul li:hover {

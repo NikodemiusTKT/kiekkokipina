@@ -3,31 +3,6 @@
    ============================================ */
 
 /* ============================================
-   LAYOUT STRUCTURE
-   ============================================ */
-
-.layout {
-  display: grid;
-  grid-template-rows: auto 1fr auto;
-  grid-template-columns: 1fr;
-  min-height: 100vh;
-  padding-top: 110px; /* Space for fixed navbar with logo */
-}
-
-main {
-  display: grid;
-  grid-template-columns: repeat(12, 1fr);
-  gap: 2rem;
-  padding: 0rem 1rem;
-  grid-column: 1 / -1;
-  grid-row: 2 / 3;
-}
-
-main > * {
-  grid-column: 1 / -1; /* Make all main children span full width by default */
-}
-
-/* ============================================
    CARDS SECTION
    ============================================ */
 

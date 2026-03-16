@@ -29,7 +29,7 @@
   /* Core Colors */
   --color-dark: #0d0a0b;
   --color-gray: #454955;
-  --color-light: #f3eff5;
+  --color-light: #ffffff;
 
   /* Brand Green Colors */
   --color-brand-primary: #72b01d; /* Bright green for buttons and highlights */
@@ -44,9 +44,8 @@
 
   /* Background Colors */
   --color-bg-page: var(--color-light);
-  --color-bg-feature: #f7f5f9; /* Light background for featured sections */
   --color-bg-card: #255933;
-  --color-bg-nav-mobile: var(--color-gray);
+  --color-bg-nav-mobile: var(--color-brand-dark);
 
   /* ===== Spacing & Typography ===== */
   --spacing-md: 1rem;

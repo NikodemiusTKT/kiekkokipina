@@ -4,7 +4,7 @@
 
 :root {
   /* Base font size */
-  --font-size-base: clamp(1rem, calc(0.909rem + 0.455vw), 1.25rem);
+  --font-size-base: clamp(1rem, 0.9107rem + 0.2857vw, 1.125rem);
   --line-height-base: 1.6;
 
   /* Type scale tokens */

@@ -2,11 +2,6 @@
    Heitot styles
    ============================================ */
 
-body {
-  color: var(--color-text-secondary);
-  font-family: var(--font-family-base);
-  line-height: var(--line-height-base);
-}
 .section-container img {
   width: 100%;
   height: auto;

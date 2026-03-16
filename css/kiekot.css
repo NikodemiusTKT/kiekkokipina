@@ -27,15 +27,6 @@ main > * {
   grid-column: 1 / -1; /* Make all main children span full width by default */
 }
 
-.ingress p {
-  color: var(--color-grey);
-}
-body {
-  color: var(--color-text-secondary);
-  font-family: var(--font-family-base);
-  line-height: 1.6;
-}
-
 /* ============================================
    CARDS SECTION
    ============================================ */
@@ -153,15 +144,9 @@ body {
 .article-container article h3 {
   margin-top: 0;
   margin-bottom: 0.75rem;
-  color: var(--color-text-primary);
   font-size: var(--font-size-l);
 }
 
-.article-container article p {
-  color: var(--color-text-secondary);
-  line-height: 1.6;
-  font-size: var(--font-size-base);
-}
 /* ============================================
    Section with image on the left and text on the right
    ============================================ */

@@ -2,12 +2,6 @@
    PERUSTEET PAGE STYLES
    ============================================ */
 
-body {
-  color: var(--color-text-secondary);
-  font-family: var(--font-family-base);
-  line-height: 1.6;
-}
-
 /* Content sections with image and text layout */
 .content-section {
   gap: 1rem;

@@ -307,6 +307,7 @@ header {
   box-shadow: var(--shadow-sm);
   grid-column: 1;
   grid-row: 2;
+  border: 2px solid var(--color-brand-primary);
 }
 
 .sidebar-heading {

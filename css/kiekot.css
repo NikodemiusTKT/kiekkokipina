@@ -262,17 +262,4 @@
     grid-column: 1 / -1 !important;
     grid-row: 2;
   }
-
-  #summary {
-    margin: 2rem 0;
-  }
-
-  #summary .section-content {
-    padding: 0 1rem;
-  }
-
-  #summary li {
-    margin: 0.5rem 0;
-    padding-left: 1.75rem;
-  }
 }

@@ -2,6 +2,14 @@
    PERUSTEET PAGE STYLES
    ============================================ */
 
+.main-content {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  gap: 2rem;
+  grid-column: 2 / -1;
+  grid-row: 2;
+}
+
 /* Content sections with image and text layout */
 .content-section {
   gap: 1rem;

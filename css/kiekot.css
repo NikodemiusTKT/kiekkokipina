@@ -2,105 +2,10 @@
    KIEKOT PAGE STYLES
    ============================================ */
 
-/* ============================================
-   CARDS SECTION
-   ============================================ */
-
-.cards-container {
-  display: grid;
-  /* Use auto-fit to create as many columns as will fit, with a minimum width of 150px and a maximum of 0.5fr (equal distribution) */
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-  gap: 2rem;
-  width: 100%;
-}
-
 .card {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-evenly;
-  text-align: center;
-  background: var(--color-bg-card);
-  border-radius: 8px;
-  box-shadow: var(--shadow-sm);
-  overflow: hidden;
-  width: 100%;
-  height: 100%;
-  transition:
-    transform 0.3s ease,
-    box-shadow 0.3s ease;
-}
-
-.card:hover {
-  transform: translateY(-5px);
-  box-shadow: var(--shadow-md);
-}
-
-.card-img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  padding: 1rem;
-}
-
-.card-body {
-  padding: 1rem;
-  display: flex;
-  flex-direction: column;
-  gap: 0.5rem;
-  flex: 1;
-  justify-content: space-between;
-}
-
-.card-title {
-  font-size: var(--font-size-m);
-  margin: 0;
-  color: var(--color-text-on-dark);
   text-align: center;
 }
 
-.card-text {
-  font-size: var(--font-size-base);
-  color: var(--color-text-on-dark);
-  margin: 0;
-}
-
-.card-subtitle {
-  font-size: var(--font-size-s);
-  color: var(--color-text-on-dark);
-  margin: 0;
-  font-weight: 700;
-  text-align: center;
-}
-
-.card-actions {
-  display: flex;
-  gap: 0.5rem;
-  flex-wrap: wrap;
-  margin-top: 0.5rem;
-  justify-content: center;
-  align-items: flex-end;
-}
-
-.card-rating {
-  display: flex;
-  gap: 0.25rem;
-  margin: 0.5rem 0;
-  justify-content: center;
-  font-size: 1.2rem;
-}
-
-.card-rating i {
-  color: yellow;
-}
-
-.card-rating i.far {
-  color: #fff;
-}
-
-.card-actions .btn {
-  width: 50%;
-  font-weight: bold;
-}
 /* ============================================
    Flight Number Articles
    ============================================ */

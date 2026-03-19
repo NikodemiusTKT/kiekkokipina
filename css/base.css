@@ -444,7 +444,7 @@ header {
 
 .card-img {
   width: 100%;
-  height: 200px;
+  height: 250px;
   object-fit: cover;
   padding: 1rem;
 }
@@ -464,10 +464,18 @@ header {
   color: var(--color-text-on-dark);
   text-align: center;
 }
+.card-subtitle {
+  font-size: var(--font-size-s);
+  color: var(--color-text-on-dark);
+  margin: 0;
+  font-weight: 700;
+  text-align: center;
+}
 
 .card-text {
   font-size: var(--font-size-base);
   color: var(--color-text-on-dark);
+  margin: 0;
 }
 
 .card-actions {
@@ -477,6 +485,26 @@ header {
   margin-top: 0.5rem;
   justify-content: center;
   align-items: flex-end;
+}
+.card-rating {
+  display: flex;
+  gap: 0.25rem;
+  margin: 0.5rem 0;
+  justify-content: center;
+  font-size: 1.2rem;
+}
+
+.card-rating i {
+  color: yellow;
+}
+
+.card-rating i.far {
+  color: #fff;
+}
+
+.card-actions .btn {
+  width: 50%;
+  font-weight: bold;
 }
 
 /* ============================================

@@ -1,3 +1,8 @@
+function navigateToPage(page, url) {
+  window.history.pushState({ page: page }, "", url);
+  document.location.replace(url);
+}
+
 // Hamburger menu toggle
 const hamburger = document.getElementById("hamburger");
 if (hamburger) {
@@ -10,7 +15,7 @@ if (hamburger) {
 const startButton = document.getElementById("start-button");
 if (startButton) {
   startButton.addEventListener("click", function () {
-    document.location.replace("./perusteet.html");
+    navigateToPage("perusteet", "./perusteet.html");
   });
 }
 
@@ -18,7 +23,7 @@ if (startButton) {
 const learnDiscsButton = document.getElementById("learn-discs-button");
 if (learnDiscsButton) {
   learnDiscsButton.addEventListener("click", function () {
-    document.location.replace("./kiekot.html");
+    navigateToPage("kiekot", "./kiekot.html");
   });
 }
 
@@ -26,7 +31,7 @@ if (learnDiscsButton) {
 const learnBasicsButton = document.getElementById("learn-basics-button");
 if (learnBasicsButton) {
   learnBasicsButton.addEventListener("click", function () {
-    document.location.replace("./perusteet.html");
+    navigateToPage("perusteet", "./perusteet.html");
   });
 }
 
@@ -34,7 +39,7 @@ if (learnBasicsButton) {
 const learnThrowsButton = document.getElementById("learn-throws-button");
 if (learnThrowsButton) {
   learnThrowsButton.addEventListener("click", function () {
-    document.location.replace("./heitot.html");
+    navigateToPage("heitot", "./heitot.html");
   });
 }
 

@@ -6,13 +6,6 @@
   grid-column: 2 / -1;
 }
 
-.section-container img {
-  width: 100%;
-  height: auto;
-  grid-column: 1 / -1;
-  border-radius: 8px;
-}
-
 /* ============================================
    Lists Styling
    ============================================ */
@@ -80,11 +73,6 @@ figcaption {
 
 /* Responsive: Stack on mobile */
 @media (max-width: 768px) {
-  main {
-    grid-template-columns: 1fr;
-    grid-template-rows: auto auto auto;
-  }
-
   .sidebar {
     display: none;
   }
@@ -92,9 +80,5 @@ figcaption {
   .main-content {
     grid-column: 1;
     grid-row: 3;
-  }
-  .hero {
-    padding: 1rem;
-    min-height: 30vh;
   }
 }

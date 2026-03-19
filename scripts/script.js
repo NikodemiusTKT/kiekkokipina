@@ -12,6 +12,15 @@ if (hamburger) {
   });
 }
 
+// Logo click to navigate to home page
+const logo = document.querySelector(".logo");
+if (logo) {
+  logo.addEventListener("click", function () {
+    navigateToPage("index", "./index.html");
+  });
+  logo.style.cursor = "pointer";
+}
+
 const startButton = document.getElementById("start-button");
 if (startButton) {
   startButton.addEventListener("click", function () {

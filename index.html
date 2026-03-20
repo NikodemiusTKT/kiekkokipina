@@ -24,7 +24,7 @@
 
     <header>
       <nav class="navbar" aria-label="Main navigation">
-        <img class="logo" src="images/kiekkokipina-brand-logo-250.webp" alt="Kiekkokipinä logo">
+        <img class="logo" src="images/kiekkokipina-logo-100.webp" alt="Kiekkokipinä logo">
         <div class="hamburger" id="hamburger">
           <span></span>
           <span></span>
@@ -41,9 +41,14 @@
     <main>
       <section class="hero">
         <div class="hero-bg">
-          <img src="images/page1/page1-hero-basket-large.webp" srcset="images/page1/page1-hero-basket-small.webp 600w,
-            images/page1/page1-hero-basket-large.webp 1200w" alt="Frisbeegolf hero background"
-            sizes="(max-width: 600px) 100vw, 50vw">
+          <picture>
+            <source srcset="images/page1/page1-hero-480.webp" media="(max-width: 480px)">
+            <source srcset="images/page1/page1-hero-768.webp" media="(max-width: 768px)">
+            <source srcset="images/page1/page1-hero-1024.webp" media="(max-width: 1024px)">
+            <source srcset="images/page1/page1-hero-1440.webp" media="(max-width: 1440px)">
+            <source srcset="images/page1/page1-hero-1920.webp" media="(min-width: 1441px)">
+            <img src="images/page1/page1-hero.png" alt="Frisbeegolf kori Hero kuva" fetchpriority="high">
+          </picture>
         </div>
         <div class="hero-content">
           <h1>Kiekkokipinä</h1>
@@ -80,7 +85,13 @@
           <h2>Mistä kannattaa aloittaa?</h2>
           <div class="cards-container">
             <div class="card">
-              <img src="images/page2/page2-hero-teepad-600.webp" alt="Frisbeegolf Tiipaikka kuva" class="card-img">
+              <picture>
+                <source srcset="images/page1/page1-card1-320.webp" media="(max-width: 350px)">
+                <source srcset="images/page1/page1-card1-480.webp" media="(max-width: 480px)">
+                <source srcset="images/page1/page1-card1-640.webp" media="(max-width: 640px)">
+                <source srcset="images/page1/page1-card1-800.webp" media="(min-width: 800px)">
+                <img src="images/page1/page1-card1.jpg" alt="Frisbeegolf Tiipaikka kuva" class="card-img">
+              </picture>
               <div class="card-body">
                 <h3 class="card-title">1. Opi perusteet</h3>
                 <p class="card-text">Opi frisbeegolfin säännöt, miten lasket pisteet ja mitä välineitä tarvitset
@@ -91,7 +102,13 @@
               </div>
             </div>
             <div class="card">
-              <img src="images/page3/page3-hero-discbag-600.webp" alt="Frisbeegolfreppu kuva" class="card-img">
+              <picture>
+                <source srcset="images/page1/page1-card2-320.webp" media="(max-width: 350px)">
+                <source srcset="images/page1/page1-card2-480.webp" media="(max-width: 480px)">
+                <source srcset="images/page1/page1-card2-640.webp" media="(max-width: 640px)">
+                <source srcset="images/page1/page1-card2-800.webp" media="(min-width: 800px)">
+                <img src="images/page1/page1-card2.jpg" alt="Frisbeegolfreppu kuva" class="card-img">
+              </picture>
               <div class="card-body">
                 <h3 class="card-title">2. Opi kiekot</h3>
                 <p class="card-text">Mitä eri tyyppisiä kiekkoja löytyy ja miten valitset oikean kiekon eri
@@ -103,7 +120,13 @@
               </div>
             </div>
             <div class="card">
-              <img src="images/page4/page4-hero-throw-600.webp" alt="Frisbeegolf Heitto kuva" class="card-img">
+              <picture>
+                <source srcset="images/page1/page1-card3-320.webp" media="(max-width: 350px)">
+                <source srcset="images/page1/page1-card3-480.webp" media="(max-width: 480px)">
+                <source srcset="images/page1/page1-card3-640.webp" media="(max-width: 640px)">
+                <source srcset="images/page1/page1-card3-800.webp" media="(min-width: 800px)">
+                <img src="images/page1/page1-card3.jpeg" alt="Frisbeegolf heittotekniikka kuva" class="card-img">
+              </picture>
               <div class="card-body">
                 <h3 class="card-title">3. Opi heitot</h3>
                 <p class="card-text">Mitä eri heittotekniikoita frisbeegolfin pelaamiseen tarvitaan.</p>

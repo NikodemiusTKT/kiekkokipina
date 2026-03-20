@@ -404,8 +404,8 @@ header {
   margin-bottom: 1rem;
   color: var(--color-text-on-dark);
   text-transform: uppercase;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
 }
-
 .hero p {
   margin-bottom: 2rem;
   font-size: var(--font-size-m);

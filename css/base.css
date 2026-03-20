@@ -45,6 +45,21 @@
   --color-card-button: #4a9b3f; /* Medium green for card action buttons */
   --color-card-button-hover: #3a7a32; /* Darker green for hover state */
 
+  /* Accent Colors */
+  --color-accent-yellow: #ffff00; /* Yellow for ratings and highlights */
+  --color-brand-light: rgba(
+    114,
+    176,
+    29,
+    0.05
+  ); /* Very light brand green background */
+  --color-brand-light-medium: rgba(
+    114,
+    176,
+    29,
+    0.15
+  ); /* Medium light brand green background */
+
   /* Semantic Text Colors */
   --color-text-primary: var(--color-dark);
   --color-text-secondary: var(--color-gray);
@@ -344,7 +359,7 @@ header {
 .sidebar-nav a:hover {
   color: var(--color-brand-primary);
   border-left-color: var(--color-brand-primary);
-  background-color: rgba(114, 176, 29, 0.05);
+  background-color: var(--color-brand-light);
   padding-left: 1rem;
 }
 /* ============================================
@@ -499,16 +514,11 @@ header {
 }
 
 .card-rating i {
-  color: yellow;
+  color: var(--color-accent-yellow);
 }
 
 .card-rating i.far {
-  color: #fff;
-}
-
-.card-actions .btn {
-  width: 50%;
-  font-weight: bold;
+  color: var(--color-text-on-dark);
 }
 
 /* ============================================
@@ -593,7 +603,7 @@ footer {
 /* Summary component */
 #summary {
   padding: 2rem 0;
-  background-color: rgba(114, 176, 29, 0.15);
+  background-color: var(--color-brand-light-medium);
   border-radius: 8px;
   margin: 3rem 0;
 }
@@ -662,7 +672,7 @@ footer {
 }
 
 .callout-content {
-  background-color: rgba(114, 176, 29, 0.15);
+  background-color: var(--color-brand-light-medium);
   padding: 1.5rem;
 }
 
@@ -721,7 +731,7 @@ footer {
 .toc-menu a:hover {
   color: var(--color-brand-primary);
   border-left-color: var(--color-brand-primary);
-  background-color: rgba(114, 176, 29, 0.05);
+  background-color: var(--color-brand-light);
 }
 
 @media (max-width: 768px) {
@@ -806,7 +816,7 @@ footer {
   }
   .mobile-toc {
     display: block;
-    background-color: #fff;
+    background-color: var(--color-light);
     border-radius: var(--border-radius);
     border: 1px solid var(--color-brand-primary);
     padding: 1rem;

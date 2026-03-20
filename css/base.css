@@ -57,10 +57,6 @@
   --shadow-md: 0 8px 20px rgba(0, 0, 0, 0.15);
   --border-radius: 8px;
 }
-@font-face {
-  font-family: "Font Awesome 7";
-  src: url();
-}
 
 /* Reset */
 * {

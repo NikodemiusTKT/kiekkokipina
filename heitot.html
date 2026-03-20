@@ -19,14 +19,16 @@
   <link
     href="https://fonts.googleapis.com/css2?family=Merriweather:ital,opsz,wght@0,18..144,300..900;1,18..144,300..900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
     rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/lite-youtube-embed/src/lite-yt-embed.css" />
+  <script src="https://cdn.jsdelivr.net/npm/lite-youtube-embed/src/lite-yt-embed.js"></script>
 </head>
 
 <body>
   <div class="layout">
     <header>
       <nav class="navbar" aria-label="Main navigation">
-        <img class="logo" src="images/kiekkokipina-brand-logo-250.webp" alt="Kiekkokipinä Brandi Logo" width="250"
-          height="150">
+        <img class="logo" src="images/kiekkokipina-logo-100.webp" alt="Kiekkokipinä Brandi Logo" width="100"
+          height="100">
         <div class="hamburger" id="hamburger">
           <span></span>
           <span></span>
@@ -42,11 +44,18 @@
     </header>
     <main>
       <section class="hero">
+
         <div class="hero-bg">
-          <img src="images/page4/page4-hero-throw-large.webp" srcset="images/page4/page4-hero-throw-600.webp 600w,
-            images/page4/page4-hero-throw-large.webp 1200w" alt="Frisbeegolf Hero heitto taustakuva"
-            sizes="(max-width: 600px) 100vw, 50vw">
+          <picture>
+            <source srcset="images/page4/page4-hero-480.webp" media="(max-width: 480px)">
+            <source srcset="images/page4/page4-hero-768.webp" media="(max-width: 768px)">
+            <source srcset="images/page4/page4-hero-1024.webp" media="(max-width: 1024px)">
+            <source srcset="images/page4/page4-hero-1440.webp" media="(max-width: 1440px)">
+            <source srcset="images/page4/page4-hero-1920.webp" media="(min-width: 1441px)">
+            <img src="images/page4/page4-hero-upscaled.jpeg" alt="Frisbeegolf heitto hero kuva" fetchpriority="high">
+          </picture>
         </div>
+
         <div class="hero-content">
           <h1>Heitot</h1>
         </div>
@@ -89,11 +98,10 @@
         <article id="backhand-throw" class="section-container">
           <h2>Rystyheitto</h2>
           <figure class="video-wrapper">
-
             <iframe width="560" height="315" src="https://www.youtube.com/embed/gCmvgiJbc5I?si=06XFhpvqtTv2nXyz"
-              title="YouTube video player"
+              loading="lazy" title="YouTube video player"
               allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-              referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+              referrerpolicy="strict-origin-when-cross-origin" allowfullscreen l></iframe>
             <figcaption>Video 1: Frisbeegolffin rystyheitto vauhdittomasti paikaltaan.</figcaption>
           </figure>
           <p>Rystypuolen draivi (backhand) on frisbeegolfin perusheitto, jossa kiekko heitetään vartalon edestä rysty
@@ -170,7 +178,7 @@
           <figure class="video-wrapper">
 
             <iframe width="560" height="315" src="https://www.youtube.com/embed/VK2IybFjsvU?si=Byl_67dt0Jcmegvu"
-              title="YouTube video player"
+              loading="lazy" title="YouTube video player"
               allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
               referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
             <figcaption>Video 2: Frisbeegolffin kämmenheitto vauhdittomasti paikaltaan.</figcaption>
@@ -271,7 +279,7 @@
           <h2>Puttaus</h2>
           <figure class="video-wrapper">
             <iframe width="560" height="315" src="https://www.youtube.com/embed/1NJCm1lETAA?si=OCN16lloeN0ng68b"
-              title="YouTube video player"
+              loading="lazy" title="YouTube video player"
               allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
               referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
             <figcaption>Video 3: Frisbeegolffin puttaustekniikka.</figcaption>

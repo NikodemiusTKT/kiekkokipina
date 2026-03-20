@@ -69,6 +69,7 @@
   --color-bg-page: var(--color-light);
   --color-bg-card: #255933;
   --color-bg-nav-mobile: var(--color-brand-dark);
+  --color-bg-cta: #1a3d0a;
 
   /* ===== Spacing & Typography ===== */
   --spacing-md: 1rem;
@@ -527,7 +528,7 @@ header {
 .cta {
   text-align: center;
   padding: 4rem 2rem;
-  background: var(--color-gray);
+  background: var(--color-bg-cta);
   color: var(--color-text-on-dark);
 }
 

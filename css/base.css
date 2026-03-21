@@ -441,6 +441,7 @@ header {
   gap: 2rem;
   width: 100%;
   margin-bottom: 2rem;
+  justify-content: center;
 }
 
 .card {
@@ -736,13 +737,23 @@ footer {
   background-color: var(--color-brand-light);
 }
 
-@media (max-width: 768px) {
-}
-
 /* ============================================
    RESPONSIVE DESIGN
    ============================================ */
 
+/* ============================================
+   TABLET RESPONSIVENESS (768px - 1024px)
+   ============================================ */
+@media (max-width: 1024px) and (min-width: 768px) {
+  /* Hide mobile TOC on tablet - sidebar is visible */
+  .mobile-toc {
+    display: none;
+  }
+}
+
+/* ============================================
+   MOBILE RESPONSIVENESS (≤767px)
+   ============================================ */
 @media (max-width: 767px) {
   main {
     grid-template-columns: 1fr;
@@ -811,6 +822,7 @@ footer {
 
   .cards-container {
     grid-template-columns: 1fr;
+    justify-content: center;
   }
 
   .card-body {

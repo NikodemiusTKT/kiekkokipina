@@ -40,17 +40,17 @@
 /* ============================================
    TABLET RESPONSIVENESS (768px - 1024px)
    ============================================ */
-@media (max-width: 1024px) and (min-width: 769px) {
+@media (max-width: 1024px) and (min-width: 768px) {
   main {
     grid-template-columns: 200px 1fr;
     gap: 1.5rem;
     padding: 0 1rem;
   }
 
-  .sidebar {
+  /* .sidebar {
     top: 140px;
     padding: 1.25rem;
-  }
+  } */
 
   .main-content {
     grid-column: 2 / -1;
@@ -80,9 +80,9 @@
 }
 
 /* ============================================
-   MOBILE RESPONSIVENESS (≤768px)
+   MOBILE RESPONSIVENESS (≤767px)
    ============================================ */
-@media (max-width: 768px) {
+@media (max-width: 767px) {
   main {
     grid-template-columns: 1fr;
     gap: 1rem;

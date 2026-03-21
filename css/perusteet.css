@@ -37,14 +37,77 @@
   margin: 1rem 0;
 }
 
-/* Responsive: Stack on mobile */
+/* ============================================
+   TABLET RESPONSIVENESS (768px - 1024px)
+   ============================================ */
+@media (max-width: 1024px) and (min-width: 769px) {
+  main {
+    grid-template-columns: 200px 1fr;
+    gap: 1.5rem;
+    padding: 0 1rem;
+  }
+
+  .sidebar {
+    top: 140px;
+    padding: 1.25rem;
+  }
+
+  .main-content {
+    grid-column: 2 / -1;
+  }
+
+  .content-section {
+    grid-template-columns: 1fr;
+    grid-template-rows: auto auto;
+    gap: 1.5rem;
+  }
+
+  .content-section img {
+    width: 100%;
+    height: auto;
+    grid-column: 1;
+    grid-row: 1;
+  }
+
+  .text-content {
+    grid-column: 1;
+    grid-row: 2;
+  }
+
+  .text-content h2 {
+    margin-top: 0;
+  }
+}
+
+/* ============================================
+   MOBILE RESPONSIVENESS (≤768px)
+   ============================================ */
 @media (max-width: 768px) {
+  main {
+    grid-template-columns: 1fr;
+    gap: 1rem;
+    padding: 0 1rem;
+  }
+
   .main-content {
     grid-column: 1;
     grid-row: 3;
   }
 
+  .content-section {
+    grid-template-columns: 1fr;
+    grid-template-rows: auto auto;
+    gap: 1rem;
+  }
+
   .content-section img {
-    width: 100%; /* Full width on mobile */
+    width: 100%;
+    grid-column: 1;
+    grid-row: 1;
+  }
+
+  .text-content {
+    grid-column: 1;
+    grid-row: 2;
   }
 }

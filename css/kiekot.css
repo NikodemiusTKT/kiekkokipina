@@ -76,14 +76,36 @@
    RESPONSIVE DESIGN
    ============================================ */
 
-@media (max-width: 767px) {
-  .main-content {
-    grid-column: 1;
-    grid-row: 3;
+/* ============================================
+   TABLET RESPONSIVENESS (768px - 1024px)
+   ============================================ */
+@media (max-width: 1024px) and (min-width: 768px) {
+  main {
+    grid-template-columns: 200px 1fr;
+    gap: 1.5rem;
+    padding: 0 1rem;
   }
+
+  .sidebar {
+    top: 140px;
+    padding: 1.25rem;
+  }
+
+  .main-content {
+    grid-column: 2 / -1;
+  }
+
   .article-container {
-    grid-template-columns: 1fr;
-    text-align: center;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.5rem;
+  }
+
+  .article-container article {
+    padding: 1.25rem;
+  }
+
+  .article-container article h3 {
+    font-size: var(--font-size-m);
   }
 
   /* Disc sections */
@@ -91,16 +113,83 @@
     grid-template-columns: 1fr;
     grid-template-rows: auto auto;
     gap: 1.5rem;
+    align-items: start;
+  }
+
+  .disc-container img {
+    grid-column: 1;
+    grid-row: 1;
+    width: 100%;
+    height: auto;
+  }
+
+  .disc-content {
+    grid-column: 1;
+    grid-row: 2;
+  }
+
+  .disc-content-columns {
+    grid-template-columns: 1fr;
+  }
+
+  .disc-content-columns h3 {
+    font-size: var(--font-size-m);
+  }
+}
+
+/* ============================================
+   MOBILE RESPONSIVENESS (≤767px)
+   ============================================ */
+@media (max-width: 767px) {
+  main {
+    grid-template-columns: 1fr;
+    gap: 1rem;
+    padding: 0 1rem;
+  }
+
+  .sidebar {
+    display: none;
+  }
+
+  .main-content {
+    grid-column: 1;
+    grid-row: 3;
+  }
+
+  .article-container {
+    grid-template-columns: 1fr;
+    text-align: center;
+    gap: 1rem;
+  }
+
+  .article-container article {
+    padding: 1rem;
+  }
+
+  .article-container article h3 {
+    font-size: var(--font-size-m);
+  }
+
+  /* Disc sections */
+  .disc-container {
+    grid-template-columns: 1fr;
+    grid-template-rows: auto auto;
+    gap: 1rem;
   }
 
   .disc-container img {
     grid-column: 1 / -1 !important;
     grid-row: 1;
     width: 100%;
+    height: auto;
   }
 
   .disc-content {
     grid-column: 1 / -1 !important;
     grid-row: 2;
+  }
+
+  .disc-content-columns {
+    grid-template-columns: 1fr;
   }
 }

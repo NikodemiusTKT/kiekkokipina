@@ -3,6 +3,7 @@
    ============================================ */
 
 :root {
+  color-scheme: light-only;
   /* Base font size */
   --font-size-base: clamp(1rem, 0.9107rem + 0.2857vw, 1.125rem);
   --line-height-base: 1.6;

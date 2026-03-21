@@ -37,13 +37,15 @@
   --color-brand-hover: #5a8a16; /* Hover state for interactive elements */
   --color-brand-dark-hover: #2f4d13; /* Dark hover state */
 
-  /* CTA Orange Colors */
-  --color-cta: #d97706; /* Accessible orange for call-to-action buttons */
-  --color-cta-hover: #b45309; /* Darker orange for hover state */
+  /* Button text color */
+  --color-button-text: var(--color-dark);
+  /* CTA Colors */
+  --color-cta: var(--color-brand-primary);
+  --color-cta-hover: var(--color-brand-hover);
 
-  /* Card Button Green */
-  --color-card-button: #4a9b3f; /* Medium green for card action buttons */
-  --color-card-button-hover: #3a7a32; /* Darker green for hover state */
+  /* Card Colors */
+  --color-card-button: var(--color-brand-primary);
+  --color-card-button-hover: var(--color-brand-hover);
 
   /* Accent Colors */
   --color-accent-yellow: #ffff00; /* Yellow for ratings and highlights */
@@ -417,7 +419,7 @@ header {
   font-size: var(--font-size-xs);
   border: none;
   background: var(--color-cta);
-  color: var(--color-text-on-dark);
+  color: var(--color-button-text);
   cursor: pointer;
   border-radius: 4px;
   transition: background-color 0.3s ease;
@@ -541,7 +543,7 @@ header {
   padding: 1.25rem 3rem;
   border: none;
   background: var(--color-cta);
-  color: var(--color-text-on-dark);
+  color: var(--color-button-text);
   cursor: pointer;
   border-radius: 4px;
   font-size: 1.2rem;
@@ -579,7 +581,7 @@ footer {
   padding: 0.5rem 1rem;
   border: none;
   background: var(--color-brand-dark);
-  color: var(--color-text-on-dark);
+  color: var(--color-button-text);
   border-radius: 4px;
   cursor: pointer;
   font-size: 0.95rem;

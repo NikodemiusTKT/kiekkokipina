@@ -71,8 +71,61 @@ figcaption {
   aspect-ratio: 16 / 9;
 }
 
-/* Responsive: Stack on mobile */
-@media (max-width: 768px) {
+/* ============================================
+   RESPONSIVE DESIGN
+   ============================================ */
+
+/* ============================================
+   TABLET RESPONSIVENESS (768px - 1024px)
+   ============================================ */
+@media (max-width: 1024px) and (min-width: 768px) {
+  main {
+    grid-template-columns: 200px 1fr;
+    gap: 1.5rem;
+    padding: 0 1rem;
+  }
+
+  .sidebar {
+    top: 140px;
+    padding: 1.25rem;
+  }
+
+  .main-content {
+    grid-column: 2 / -1;
+  }
+
+  ul,
+  ol {
+    margin-bottom: 1.25rem;
+    padding-left: 1.5rem;
+  }
+
+  li {
+    font-size: var(--font-size-base);
+    line-height: 1.7;
+  }
+
+  figcaption {
+    font-size: var(--font-size-s);
+    margin-top: 0.75rem;
+  }
+
+  .video-wrapper {
+    max-width: 100%;
+    margin: 1.5rem 0;
+  }
+}
+
+/* ============================================
+   MOBILE RESPONSIVENESS (≤767px)
+   ============================================ */
+@media (max-width: 767px) {
+  main {
+    grid-template-columns: 1fr;
+    gap: 1rem;
+    padding: 0 1rem;
+  }
+
   .sidebar {
     display: none;
   }
@@ -80,5 +133,45 @@ figcaption {
   .main-content {
     grid-column: 1;
     grid-row: 3;
+  }
+
+  ul,
+  ol {
+    margin-bottom: 1rem;
+    padding-left: 1.5rem;
+    margin-left: 0;
+  }
+
+  li {
+    font-size: var(--font-size-base);
+    line-height: 1.7;
+    margin-bottom: 0.5rem;
+  }
+
+  ul li:hover,
+  ol li:hover {
+    color: var(--color-brand-primary);
+    transition: color 0.2s ease;
+  }
+
+  figure {
+    margin: 1.25rem 0;
+    align-items: stretch;
+  }
+
+  figcaption {
+    font-size: var(--font-size-s);
+    text-align: left;
+    margin-top: 0.5rem;
+  }
+
+  .video-wrapper {
+    max-width: 100%;
+    margin: 1rem 0;
+  }
+
+  .video-wrapper iframe {
+    width: 100%;
+    aspect-ratio: 16 / 9;
   }
 }

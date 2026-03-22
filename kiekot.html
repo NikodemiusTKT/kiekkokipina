@@ -47,10 +47,14 @@
     <main>
       <section class="hero">
         <div class="hero-bg">
-          <img src="images/page3/page3-hero-discbag.webp"
-            srcset="images/page3/page3-hero-discbag-380.webp 380w, images/page3/page3-hero-discbag-480.webp 480w, images/page3/page3-hero-discbag-768.webp 768w, images/page3/page3-hero-discbag-1024.webp 1024w, images/page3/page3-hero-discbag-1440.webp 1440w, images/page3/page3-hero-discbag-1920.webp 1920w"
-            sizes="(max-width: 480px) 100vw, (max-width: 1024px) 100vw, 100vw" alt="Frisbeegolf Hero kassikuva"
-            decoding="async" fetchpriority="high">
+          <picture>
+            <source srcset="images/page3/page3-hero-discbag-480.webp" media="(max-width: 480px)">
+            <source srcset="images/page3/page3-hero-discbag-768.webp" media="(max-width: 768px)">
+            <source srcset="images/page3/page3-hero-discbag-1024.webp" media="(max-width: 1024px)">
+            <source srcset="images/page3/page3-hero-discbag-1440.webp" media="(max-width: 1440px)">
+            <source srcset="images/page3/page3-hero-discbag-1920.webp" media="(min-width: 1441px)">
+            <img src="images/page3/page3-hero-discbag.jpg" alt="Frisbeegolf Hero kassikuva" fetchpriority="high">
+          </picture>
         </div>
         <div class="hero-content">
           <h1>Kiekot</h1>
@@ -101,9 +105,9 @@
           <h2>Kiekkotyypit yhdellä silmäyksellä</h2>
           <div class="cards-container">
             <div class="card">
-              <img src="images/page3/page3-putter-380w.webp"
-                srcset="images/page3/page3-putter-250w.webp 250w, images/page3/page3-putter-380w.webp 380w"
-                sizes="(max-width: 600px) 250px, 380px" loading="lazy" width="380" height="380"
+              <img src="images/page3/page3-putter-600.webp"
+                srcset="images/page3/page3-putter-300.avif 300w, images/page3/page3-putter-600.avif 600w"
+                sizes="(min-width: 1024px) 25vw, (min-width: 768px) 50vw, 100vw" loading="lazy"
                 alt="frisbeegolf putterikiekko kuva" class="card-img">
               <div class="card-body">
                 <h3 class="card-title">Putteri</h3>
@@ -122,9 +126,9 @@
               </div>
             </div>
             <div class="card">
-              <img src="images/page3/page3-midrange-380w.webp"
-                srcset="images/page3/page3-midrange-250w.webp 250w, images/page3/page3-midrange-380w.webp 380w"
-                sizes="(max-width: 600px) 250px, 380px" loading="lazy" width="380" height="380"
+              <img src="images/page3/page3-midrange.webp"
+                srcset="images/page3/page3-midrange-300.avif 300w, images/page3/page3-midrange-600.avif 600w"
+                sizes="(min-width: 1024px) 25vw, (min-width: 768px) 50vw, 100vw" loading="lazy"
                 alt="frisbeegolf midarikiekko kuva" class="card-img">
               <div class="card-body">
                 <h3 class="card-title">Midari</h3>
@@ -144,9 +148,9 @@
               </div>
             </div>
             <div class="card">
-              <img src="images/page3/page3-fairway-driver-380w.webp"
-                srcset="images/page3/page3-fairway-driver-250w.webp 250w, images/page3/page3-fairway-driver-380w.webp 380w"
-                sizes="(max-width: 600px) 250px, 380px" loading="lazy" width="380" height="380"
+              <img src="images/page3/page3-fairway-driver.webp"
+                srcset="images/page3/page3-fairway-driver-300.avif 300w, images/page3/page3-fairway-driver-600.avif 600w"
+                sizes="(min-width: 1024px) 25vw, (min-width: 768px) 50vw, 100vw" loading="lazy"
                 alt="väylädraiverikiekko kuva" class="card-img">
               <div class="card-body">
                 <h3 class="card-title">Väylädraiveri</h3>
@@ -165,9 +169,9 @@
               </div>
             </div>
             <div class="card">
-              <img src="images/page3/page3-distance-driver-380w.webp"
-                srcset="images/page3/page3-distance-driver-250w.webp 250w, images/page3/page3-distance-driver-380w.webp 380w"
-                sizes="(max-width: 600px) 250px, 380px" width="380" height="380" loading="lazy"
+              <img src="images/page3/page3-distance-driver.webp"
+                srcset="images/page3/page3-distance-driver-300.avif 300w, images/page3/page3-distance-driver-600.avif 600w"
+                sizes="(min-width: 1024px) 25vw, (min-width: 768px) 50vw, 100vw" loading="lazy"
                 alt="pituusdraiverikiekko kuva" class="card-img">
               <div class="card-body">
                 <h3 class="card-title">Pituusdraiveri</h3>
@@ -222,8 +226,8 @@
         <article id="discgolf-putter">
           <div class="disc-container">
             <picture>
-              <source srcset="images/page3/page3-putter-380w.webp" media="(max-width: 600px)">
-              <source srcset="images/page3/page3-putter.webp" media="(min-width: 601px)">
+              <source srcset="images/page3/page3-putter-300.avif" media="(max-width: 600px)">
+              <source srcset="images/page3/page3-putter-600.avif" media="(min-width: 601px)">
               <img src="images/page3/page3-putter.webp" loading="lazy" alt="frisbeegolf putterikiekko kuva">
             </picture>
 
@@ -267,8 +271,8 @@
         <article id="discgolf-midrange">
           <div class="disc-container">
             <picture>
-              <source srcset="images/page3/page3-midrange-380w.webp" media="(max-width: 600px)">
-              <source srcset="images/page3/page3-midrange.webp" media="(min-width: 601px)">
+              <source srcset="images/page3/page3-midrange-300.avif" media="(max-width: 600px)">
+              <source srcset="images/page3/page3-midrange-600.avif" media="(min-width: 601px)">
               <img src="images/page3/page3-midrange.webp" loading="lazy" alt="frisbeegolf midari kuva">
             </picture>
             <div class="disc-content">
@@ -312,8 +316,8 @@
         <article id="discgolf-fairway">
           <div class="disc-container">
             <picture>
-              <source srcset="images/page3/page3-fairway-driver-380w.webp" media="(max-width: 600px)">
-              <source srcset="images/page3/page3-fairway-driver.webp" media="(min-width: 601px)">
+              <source srcset="images/page3/page3-fairway-driver-300.avif" media="(max-width: 600px)">
+              <source srcset="images/page3/page3-fairway-driver-600.avif" media="(min-width: 601px)">
               <img src="images/page3/page3-fairway-driver.webp" loading="lazy" alt="väylädraiverikiekko kuva">
             </picture>
             <div class="disc-content">
@@ -358,8 +362,8 @@
         <article id="discgolf-distance-driver">
           <div class="disc-container">
             <picture>
-              <source srcset="images/page3/page3-distance-driver-380w.webp" media="(max-width: 600px)">
-              <source srcset="images/page3/page3-distance-driver.webp" media="(min-width: 601px)">
+              <source srcset="images/page3/page3-distance-driver-300.avif" media="(max-width: 600px)">
+              <source srcset="images/page3/page3-distance-driver-600.avif" media="(min-width: 601px)">
               <img src="images/page3/page3-distance-driver.webp" loading="lazy" alt="pituusdraiverikiekko kuva">
             </picture>
             <div class="disc-content">
